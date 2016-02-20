@@ -17,27 +17,167 @@
 	<!--stylejä-->
 	
     <link href="stylefile.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 	
 	<!--fontit-->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
  
+ </head>
  
  
- <style>
-   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Corben', Georgia, Times, serif;
-}
-p, div {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
-}
- </style>
- 
-<!-- Header -->
-	<div class="container-fluid">
-		<div id="header">
-				<h2><span>Helsinki urban development</span></h2>
-			<div style="height:20px;"></div>
-			
-		</div>	
+ <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="home"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Helsinki City Feedback Viewer</h1>
+                        <h3>See out maps below:</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="googlemaps" class="btn btn-default btn-lg"><span class="network-name">Google Maps</span></a>
+                            </li>
+                            <li>
+                                <a href="openlayers" class="btn btn-default btn-lg"><span class="network-name">OpenLayers</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="about"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Welcome to WMP Team A<br>Web Map Project page</h2>
+                    <p class="lead">These maps are created for the Web Map Project course in Aalto University. They depict service requests given to the City of Helsinki.
+					City residents can check the status of their feedback on a map and observe what kind of service requests and feedbacks are given for example in their neighbourhood or in other areas of interest.</p>
+					<p class="lead">Data for the maps is from City of Helsinki’s <a target="_blank" href="http://dev.hel.fi/apis/open311/">Open 311 API</a> which is an API for reporting issues and giving feedback.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/1280px-Toolonlahti_area_from_air.JPG" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Web map using Google Maps API</h2>
+                    <p class="lead">The web maps are implemented using two different techniques: Google Maps API and OpenLayers 3.</p>
+					<p class="lead">Google Maps version has custom and basic background maps to choose from. Check the map <a target="_blank" href="http://users.aalto.fi/~tarnana1/WMP-team-Ahma/googlemaps/">here</a>.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/Googlemapsicon2015.png" alt="">
+                </div>
+            </div
+
+        </div>
 		
-	</div>
+		
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+	
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Web map using OpenLayers 3</h2>
+                    <p class="lead">The other map was created using OpenLayers 3 and MapBox tiles for background map. Check the Open Layers map <a target="_blank" href="http://users.aalto.fi/~tarnana1/WMP-team-Ahma/openlayers/">here</a>.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/OpenLayers_logo.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Web Map Project Team A, Aalto University, 2016.<br>Photos: <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Etelaranta_Helsinki.jpg">Etelaranta Helsinki</a>, <a target="_blank" href="https://commons.wikimedia.org/wiki/File:T%C3%B6%C3%B6l%C3%B6nlahti_area_from_air.JPG">Töölönlahti area from air</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+   
+
+</body>
+
+</html>
